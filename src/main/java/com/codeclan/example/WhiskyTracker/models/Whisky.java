@@ -19,6 +19,7 @@ public class Whisky {
     @Column(name = "age")
     private int age;
 
+
     @ManyToOne
     @JoinColumn(name = "distillery_id", nullable = false)
     private Distillery distillery;

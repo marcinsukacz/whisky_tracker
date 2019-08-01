@@ -5,6 +5,6 @@ import com.codeclan.example.WhiskyTracker.models.Whisky;
 import java.util.List;
 
 public interface WhiskyRepositoryCustom {
-    public List<Whisky> findWhiskyByRegion(String region);
+    List<Whisky> findByRegion(String region);
 
 }

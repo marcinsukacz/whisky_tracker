@@ -34,7 +34,7 @@ public class WhiskyController {
 
     @GetMapping(value = "/region/{region}")
     public List<Whisky> findWhiskyByRegion(@PathVariable String region){
-        return whiskyRepository.findWhiskyByRegion(region.toLowerCase());
+        return whiskyRepository.findByRegion(region);
     }
 
 }
